@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="24dp"
+    android:orientation="vertical"
+    tools:context=".ConfigActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="UBAH PASSWORD"
+            android:textColor="#000000"
+            android:layout_alignParentRight="true"
+            android:textSize="24dp"></TextView>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_dark"
+            android:onClick="back">
+
+        </ImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bg">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:layout_marginBottom="@dimen/space_vertical_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Old Password"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <EditText
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:background="@drawable/edit_frame"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/space_horizontal"
+            android:paddingEnd="@dimen/space_horizontal"
+            android:textSize="@dimen/font_edit_text2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:layout_marginBottom="@dimen/space_vertical_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Password"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <EditText
+            android:id="@+id/editpassword2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:background="@drawable/edit_frame"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/space_horizontal"
+            android:paddingEnd="@dimen/space_horizontal"
+            android:textSize="@dimen/font_edit_text2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:layout_marginBottom="@dimen/space_vertical_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Re Input New Password"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <EditText
+            android:id="@+id/editpassword3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:background="@drawable/edit_frame"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/space_horizontal"
+            android:paddingEnd="@dimen/space_horizontal"
+            android:textSize="@dimen/font_edit_text2" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:layout_marginBottom="@dimen/space_vertical"
+        android:background="@drawable/btn_bg_light"
+        android:text="@string/dialog_change"
+        android:textColor="@color/primary_text_dark"
+        android:textSize="@dimen/font_button"
+        android:onClick="configuser"/>
+</LinearLayout>
+

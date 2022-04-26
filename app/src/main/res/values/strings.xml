@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BestKurir</string>
+
+    <string name="sec">s</string>
+    <string name="image_desc"> </string>
+    <string name="err_password">Wrong Password!</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_change">CHANGE</string>
+</resources>
